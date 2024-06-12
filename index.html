@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My ecommerce store</title>
+
+<style type="text/css">
+
+
+body{
+
+font-family: sans-serif;
+background-color: #f4f8fb;
+padding: 0;
+margin: 0;
+
+}
+
+header{
+
+background-color: #333;
+align-items: center;
+display: flex;
+padding: 15 0px;
+color: white;
+justify-content: space-between;
+
+}
+.header-content{
+
+display: flex;
+align-items: center;
+width: 100%;
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 20px;
+
+
+}
+.header-content h1{
+
+margin: 0;
+flex-grow: 1;
+
+}
+
+nav ul{
+
+list-style: none;
+display: flex;
+margin: 0;
+padding: 0;
+
+}
+
+nav li a {
+
+color: white;
+text-decoration: none;
+transition: color 0.3s ease;
+padding: 10px 20px;
+
+}
+
+nav ul li a:hover {
+
+    color:  #77a3a4;
+
+}
+.cart-icon{
+
+margin: 0;
+align-items: center;
+
+}
+.cart-icon img{
+
+    width: 30px;
+    height: auto;
+
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product {
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    width: calc((100% / 3) - 100px); /* Adjust for 3 products per row */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.product img{
+
+max-width: 100%;
+height: auto;
+margin-bottom: 15px;
+
+}
+
+.product h2{
+
+color: #333;
+margin-bottom: 15px;
+
+}
+
+.price{
+
+color: #007bff;
+margin-bottom: 15px;
+font-size: 1.5rem;
+
+}
+.button{
+
+background-color: #28a745;
+color: white;
+border-radius: 5px;
+padding: 10px 15px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+
+}
+
+.button:hover{
+
+background-color: #218838;
+
+}
+
+footer{
+
+background-color: #333;
+color: white;
+padding: 10px 0;
+text-align: center;
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .product {
+        width: calc((100% / 2) - 30px); /* Adjust for 2 products per row */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .product {
+        width: 100%; /* Full width for single product per row */
+    }
+}
+
+
+
+</style>
+
+
+</head>
+<body>
+     
+
+   <header>
+
+    <div class="header-content">
+
+       
+       <h1>Ecommerce Store</h1>
+        
+
+    <nav>
+    
+    <ul>
+
+<li>
+
+<a href="#">Home</a>
+
+</li>
+
+<li>
+
+<a href="#">New Arrivals</a>
+
+</li>
+
+<li>
+
+<a href="#">Top Seller</a>
+
+</li>
+
+<li>
+
+    <a href="#">Sales</a>
+
+</li>
+
+
+
+    </ul>
+
+    <div class="cart-icon">
+    
+    </div>
+
+    </nav>
+
+    </div>
+
+
+   </header>
+
+<main class="product-container">
+
+    <section class="product" id="product1">
+
+<img src="https://images.pexels.com/photos/19090/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600" width="100%" alt="product 1">
+
+<h2>product 1</h2>
+
+<p class="price">$56.00</p>
+
+<button class="button">Add to cart</button>
+
+
+    </section>
+
+
+<section class="product" id="product1">
+
+<img src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="100%" alt="product1">
+
+<h2>product 2</h2>
+
+<p class="price">$78.00</p>
+
+<button class="button">Add to Cart</button>
+
+</section>
+
+<section class="product" id="product1">
+
+<img src="https://images.pexels.com/photos/1598508/pexels-photo-1598508.jpeg?auto=compress&cs=tinysrgb&w=600" width="100%" alt="product1">
+
+<h2>product 3</h2>
+
+<p class="price">$98.00</p>
+
+<button class="button">Add to Cart</button>
+
+
+</section>
+
+<section class="product" id="product1">
+
+    <img src="https://images.pexels.com/photos/1159670/pexels-photo-1159670.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="100%" alt="product1">
+    
+    <h2>product 4</h2>
+    
+    <p class="price">$100.00</p>
+    
+    <button class="button">Add to Cart</button>
+
+
+    
+
+</main>
+
+
+<footer>
+
+<p>@All Rights Belongs to Malik Ahmad 2024</p>
+
+
+</footer>
+
+    
+</body>
+</html>
